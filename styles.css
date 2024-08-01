@@ -1,13 +1,44 @@
-/*  your css code here. If applicable */
-  .code{
-               width: 90px;
-               height: 90px;
-               font-size: 2rem;
-               text-align: center;
-           }
-           .container{
-              text-align: center;
-                width: 700px;
-                height: 400px;
-                border: 2px solid black;
-           }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+#verification_heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#verification_subtext {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.code-container {
+    display: flex;
+    justify-content: center;
+}
+
+.code {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.code.focused {
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+}
