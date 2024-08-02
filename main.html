@@ -7,18 +7,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1 id="verification_heading">OTP Verification</h1>
-    <p id="verification_subtext">Enter the 6-digit code sent to your mobile number</p>
+  <section class="container">
+    <header>
+      <h1 id="verification_heading">OTP Verification</h1>
+      <p id="verification_subtext">Enter the 6-digit code sent to your mobile number</p>
+    </header>
     <div class="code-container">
-      <input type="text" maxlength="1" class="code" id="code-1" />
-      <input type="text" maxlength="1" class="code" id="code-2" />
-      <input type="text" maxlength="1" class="code" id="code-3" />
-      <input type="text" maxlength="1" class="code" id="code-4" />
-      <input type="text" maxlength="1" class="code" id="code-5" />
-      <input type="text" maxlength="1" class="code" id="code-6" />
+      <input type="text" maxlength="1" class="code" id="code-1" aria-label="OTP digit 1">
+      <input type="text" maxlength="1" class="code" id="code-2" aria-label="OTP digit 2">
+      <input type="text" maxlength="1" class="code" id="code-3" aria-label="OTP digit 3">
+      <input type="text" maxlength="1" class="code" id="code-4" aria-label="OTP digit 4">
+      <input type="text" maxlength="1" class="code" id="code-5" aria-label="OTP digit 5">
+      <input type="text" maxlength="1" class="code" id="code-6" aria-label="OTP digit 6">
     </div>
-  </div>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
