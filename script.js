@@ -1,35 +1,23 @@
-//your JS code here. If required.
- const inputFields = document.querySelectorAll('.code');
+const inputFields = document.querySelectorAll(".code")
 
-    inputFields.forEach((input, index) => {
-        input.addEventListener('input', (event) => {
-            const value = event.target.value;
-            if (value) {
-                if (index < inputFields.length - 1) {
-                    inputFields[index + 1].focus();
-                }
-            }
-        });
+inputFields.forEach((input, index) => {
+	input.addEventListener("input",  () => {
+	if(input.value != "" && index < inputFields.length-1){
+	input.classList.remove("focused");
+		inputFields[index+1].classList.add("focused")
+		 inputFields[index+1].focus()
+		
+	}
+	})
+}) 
 
-        input.addEventListener('keydown', (event) => {
-            if (event.key === 'Backspace') {
-                if (input.value === '') {
-                    if (index > 0) {
-                        inputFields[index - 1].focus();
-                    }
-                } else {
-                    input.value = '';
-                }
-            }
-        });
+inputFields.forEach((input , index) => {
+	 input.addEventListener("keydown", (event) => {
+		if (event.key === "Backspace" && input.value === "" && index > 0) {
+ input.classList.remove("focused");
+ inputFields[index - 1].classList.remove("focused");
+  inputFields[index - 1].focus();
+}
 
-        // Ensuring focus styles for testing
-        input.addEventListener('focus', () => {
-            input.classList.add('focused');
-        });
-
-        input.addEventListener('blur', () => {
-            input.classList.remove('focused');
-        });
-    });
-    
+	 })
+})
