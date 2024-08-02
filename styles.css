@@ -37,12 +37,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.focused {
-  border-color: #007bff;
-  transition: border-color 0.3s;
-}
 
-.code.focused {
+.code .focused {
     border-color: blue;
     box-shadow: 0 0 5px blue;
 }
