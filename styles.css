@@ -38,9 +38,7 @@ body {
     border-radius: 4px;
 }
 
-/* ... existing CSS ... */
-
-.code.focused-input {
+.code.focused {
   border-color: blue;
   box-shadow: 0 0 5px blue;
 }
