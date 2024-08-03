@@ -25,3 +25,4 @@ inputFields.forEach((input, index) => {
         input.classList.remove("focused");
     });
 });
+
